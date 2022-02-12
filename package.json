@@ -1,0 +1,14 @@
+{
+  "name": "pro-readme-creator",
+  "version": "1.0.0",
+  "description": "Make a professional readMe",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "aditore",
+  "license": "ISC",
+  "dependencies": {
+    "inquirer": "^8.2.0"
+  }
+}

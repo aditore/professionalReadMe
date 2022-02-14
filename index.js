@@ -14,11 +14,16 @@ const questions = () => {
     ]);
 }
 // TODO: Create a function to write README file
-fs.writeFile('README.md', generateMarkdown, (err) =>
-    err ? console.error(err) : console.log('README generated successfully')
-);
+// const write = (answers) => fs.writeFile('README.md', generateMarkdown(answers), (err) =>
+//     err ? console.error(err) : console.log('README generated successfully')
+// );
 // TODO: Create a function to initialize app
-function init() {}
+const init = () => {
+    questions()
+        .then(({title}) => fs.writeFileSync('README.md', generateMarkdown({title})))
+        .then(() => console.log('Congrats on the work you should have done yourself!'))
+        .catch((err) => console.error(err));
+};
 
 // Function call to initialize app
-//init();
+init();

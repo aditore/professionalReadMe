@@ -1,17 +1,27 @@
-# na
+# d
+
+  ## Licensing
+  [![license](hhtps://img.shields.io/badge/license-Common-Development-and Distribution-blue)](https://shields.io)
+
   ## Description 
-  na
+  d
+
   ## Table of Contents
   
   ## Installation
-  na
+  d
+
   ## Usage
-  na
+  d
+
   ## License
-  undefined
+  Common-Development-and Distribution
+
   ## Contributing
-  na
+  d
+
   ## Tests
-  na
+  d
+
   ## Questions
   undefined

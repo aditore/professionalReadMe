@@ -41,6 +41,21 @@ const questions = () => {
             name: 'tests',
             message: 'Add your test instructions',
         },
+        {
+            //license
+            type: 'list',
+            name: 'license',
+            message: 'Please pick a license',
+            choices: ['Apache', 'Common-Development-and-Distribution', 'GNU-General-Public', 'MIT', 'Mozilla-Public', 'None'],
+            validate: licenseInput => {
+                if (licenseInput) {
+                    return true;
+                } else {
+                    console.log('Please select a license');
+                    return false;
+                }
+            }
+        }
     ]);
 }
 // TODO: Create a function to write README file

@@ -14,23 +14,8 @@ const questions = () => {
         {
             //description
             type: 'input',
-            name: 'descriptionA',
-            message: 'What was your motivation?', 
-        },
-        {
-            type: 'input',
-            name: 'descriptionB',
-            message: 'Why did you build this?',
-        },
-        {
-            type: 'input',
-            name: 'descriptionC',
-            message: 'What problem does this solve?',
-        },
-        {
-            type: 'input',
-            name: 'descriptionD',
-            message: 'What did you learn?'
+            name: 'description',
+            message: 'Provide a description of your project', 
         },
         {
             //installation
@@ -48,7 +33,7 @@ const questions = () => {
             //contributing
             type: 'input',
             name: 'contributing',
-            message: 'Who all contributed to this project?',
+            message: 'How can people contribute to your project?',
         },
         {
             //tests
@@ -59,14 +44,12 @@ const questions = () => {
     ]);
 }
 // TODO: Create a function to write README file
-// const write = (answers) => fs.writeFile('README.md', generateMarkdown(answers), (err) =>
-//     err ? console.error(err) : console.log('README generated successfully')
-// );
+
 // TODO: Create a function to initialize app
 const init = () => {
     questions()
-        .then(({title, descriptionA, descriptionB, descriptionC, descriptionD, installation, usage, contributing, tests}) => 
-            fs.writeFileSync('README.md', generateMarkdown({title, descriptionA, descriptionB, descriptionC, descriptionD, installation, usage, contributing, tests})))
+        .then((data) => 
+            fs.writeFileSync('README.md', generateMarkdown(data)))
         .then(() => console.log('Congrats on the work you should have done yourself!'))
         .catch((err) => console.error(err));
 };

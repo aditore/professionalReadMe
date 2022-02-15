@@ -1,7 +1,6 @@
 // TODO: Include packages needed for this application
 const fs = require('fs');
 const inquirer = require('inquirer');
-const { title } = require('process');
 const generateMarkdown = require('./utils/generateMarkdown');
 // TODO: Create an array of questions for user input
 const questions = () => {
@@ -144,7 +143,7 @@ const init = () => {
             fs.writeFileSync('./createReadMe/README.md', generateMarkdown(data)))
         .then(() => console.log('Congrats on the work you should have done yourself!'))
         .catch((err) => console.error(err));
-};
+}
 
 // Function call to initialize app
 init();

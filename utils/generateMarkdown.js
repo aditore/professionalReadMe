@@ -1,5 +1,3 @@
-const inquirer = require('inquirer');
-
 // TODO: Create a function to generate markdown for README
 function generateMarkdown(data) {
   return `# ${data.title}
@@ -10,12 +8,11 @@ function generateMarkdown(data) {
   ${data.description}
 
   ## Table of Contents
-
-    - [Installation](#installation)
-    - [Usage](#usage)
-    - [Contributing](#contributing)
-    - [Tests](#tests)
-    - [Questions](#questions)
+  - [Installation](#installation)
+  - [Usage](#usage)
+  - [Contributing](#contributing)
+  - [Tests](#tests)
+  - [Questions](#questions)
   
   ## Installation
   ${data.installation}

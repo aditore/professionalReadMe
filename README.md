@@ -39,5 +39,5 @@
   ## Questions
 
   If you have any questions feel free to reach out!
-  - GitHub: [github](https://github.com/github)
-  - Email: username
+  - GitHub: [aditore](https://github.com/aditore)
+  - Email: anthonyditore@gmail.com

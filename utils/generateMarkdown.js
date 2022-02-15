@@ -4,13 +4,13 @@ const inquirer = require('inquirer');
 function generateMarkdown(data) {
   return `# ${data.title}
 
-  ## Licensing
   [![license](https://img.shields.io/badge/license-${data.license}-red)](https://shields.io)
 
   ## Description 
   ${data.description}
 
   ## Table of Contents
+
     - [Installation](#installation)
     - [Usage](#usage)
     - [Contributing](#contributing)
@@ -33,6 +33,7 @@ function generateMarkdown(data) {
   ${data.tests}
 
   ## Questions
+
   If you have any questions feel free to reach out!
   - GitHub: [${data.github}](https://github.com/${data.github})
   - Email: ${data.email}

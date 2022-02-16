@@ -21,6 +21,7 @@
 
   ## Usage
   
+  CLICK ON THE IMAGE TO GO TO VIDEO PRESENTATION!
   [![videoPresentation](./utils/videoPresPicture.jpg)](https://drive.google.com/file/d/1GZZJ5VvFSjxuW7fp_Ji1t2R5XXn_z3GO/view)
 
     WHEN I am prompted for information about my application repository
